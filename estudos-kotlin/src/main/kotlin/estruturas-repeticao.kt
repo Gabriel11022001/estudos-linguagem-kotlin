@@ -30,4 +30,8 @@ fun main() {
             break
         }
     }
+    var peso: Double = 87.98;
+    var altura: Double = 1.82;
+    var imc: Double = peso / (altura * altura);
+    println("Seu imc é: " + imc)
 }
