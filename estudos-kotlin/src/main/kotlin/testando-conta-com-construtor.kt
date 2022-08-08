@@ -1,4 +1,4 @@
-import com.gabriel.estudoskotlin.contacomconstrutor.Conta
+import com.gabriel.estudoskotlin.classes.Conta
 
 fun main() {
     var conta = Conta("Gabriel", 123)

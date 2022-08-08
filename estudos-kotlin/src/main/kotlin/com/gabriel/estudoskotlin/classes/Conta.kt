@@ -1,4 +1,4 @@
-package com.gabriel.estudoskotlin.contacomconstrutor
+package com.gabriel.estudoskotlin.classes
 
 class Conta(var nomeTitular: String, var numeroConta: Int) {
 
