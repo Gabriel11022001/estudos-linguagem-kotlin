@@ -7,6 +7,10 @@ class Diretor(
 ) : Funcionario(nome = nome, cpf = cpf, rg = rg) {
 
     override fun calcularBonificacao(): Double {
-        return this.salario * (0.4)
+        return super.salario * (0.4)
+    }
+    override fun apresentarDados() {
+        println("Apresentando os dados do diretor:")
+        super.apresentarDados()
     }
 }

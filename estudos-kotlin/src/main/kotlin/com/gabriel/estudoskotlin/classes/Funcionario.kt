@@ -8,7 +8,7 @@ import java.lang.RuntimeException
  * a palavra reservada "open", possibilitando que qualquer classe possa
  * herdar dessa classe
  */
-open class Funcionario(
+open abstract class Funcionario(
     var nome: String,
     var cpf: String,
     var rg: String
@@ -40,5 +40,10 @@ open class Funcionario(
     }
     override fun toString(): String {
         return "Nome: ${this.nome} | Rg: ${this.rg} | Cpf: ${this.cpf} | Salário: R$${this.salario}"
+    }
+    open fun apresentarDados() {
+        println("Nome: ${this.nome}")
+        println("Rg: ${this.rg}")
+        println("Cpf: ${this.cpf}")
     }
 }
